@@ -27,6 +27,13 @@ public class TaxComputations {
 	private static double basicRate = 0.04;
 	private static double luxuryRate = 0.1;
 	
+	private void changeBasicRate(double d){
+		basicRate = d;
+		}
+	private void changeLuxuryRate(double d){
+		luxuryRate = d;
+		}
+	
 	private static double computeBasicCost(double cost){
 		return cost += (cost * basicRate);
 		}
